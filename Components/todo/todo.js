@@ -11,10 +11,12 @@ export default class TodoApp extends React.Component {
             ],
             id:'',
             name:'',
-            isDone:false
+            isDone:false,
+            filter:"All"
         }
         this.addItem=this.addItem.bind(this);
         this.handleToggle=this.handleToggle.bind(this);
+        this.handleComplete=this.handleComplete.bind(this);
     }
 
     addItem() {
@@ -34,6 +36,13 @@ export default class TodoApp extends React.Component {
         this.setState({
             isDone:e.target.checked
         })
+    }
+
+    handleComplete() {
+        this.setState({
+            filter:"Complete"
+        })
+        return this.state.items.filter(item => item.isDone === true);
     }
 
 
