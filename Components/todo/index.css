@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    font-family: 'Open Sans', arial, sans-serif;
+}
+
+#container {
+    background-color: lightgoldenrodyellow;
+    width: 50%;
+    padding: 20px;
+}
+
+.completed {
+    color: rgb(244, 186, 176);
+    font-style: italic;
+    text-decoration-line: line-through;
+}
+
+.incompleted {
+    color: tomato;
+}
+
+#container h1 {
+    text-align: center;
+}
+
+#container .add-item {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#container .add-item input {
+    
+}
+
+#container .add-item button {
+    background-color: tomato;
+    color:#ffffff;
+}
+
+#container ul {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+}
+
+#container ul li {
+    list-style: none;
+}
+
+#container .items-status {
+    text-align: center;
+}
