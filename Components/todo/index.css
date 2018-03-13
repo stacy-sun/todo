@@ -1,54 +1,57 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 body {
-    font-family: 'Open Sans', arial, sans-serif;
+  font-family: arial, sans-serif;
 }
 
 #container {
-    background-color: lightgoldenrodyellow;
-    width: 50%;
-    padding: 20px;
+  width: 50%;
+  padding: 20px;
 }
 
 .completed {
-    color: rgb(244, 186, 176);
-    font-style: italic;
-    text-decoration-line: line-through;
+  color: rgb(244, 186, 176);
+  font-style: italic;
+  text-decoration-line: line-through;
 }
 
 .incompleted {
-    color: tomato;
+  color: tomato;
 }
 
 #container h1 {
-    text-align: center;
+  text-align: center;
 }
 
 #container .add-item {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#container .add-item input {
-    
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #container .add-item button {
-    background-color: tomato;
-    color:#ffffff;
+  background-color: tomato;
+  color: #ffffff;
 }
 
 #container ul {
-    display: block;
-    width: 50%;
-    margin: 20px auto;
+  display: block;
+  width: 50%;
+  margin: 20px auto;
 }
 
 #container ul li {
-    list-style: none;
+  list-style: none;
+}
+
+#container ul li span {
+  display: inline-block;
+  margin: 5px 5px;
+}
+
+.add-item input[type='text'],
+select {
+  padding: 8px 10px;
 }
 
 #container .items-status {
-    text-align: center;
+  text-align: center;
 }

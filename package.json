@@ -4,16 +4,27 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "acl-ui": "git+ssh://git@github.com/acl-services/acl-ui-dist.git",
+    "acl-icon-font": "git+ssh://git@github.com:acl-services/acl-icon-font.git",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "node-sass": "^4.7.2",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "sass-loader": "^6.0.7"
   },
   "devDependencies": {
     "@storybook/react": "^3.3.14",
-    "babel-core": "^6.26.0"
+    "eslint": "^4.18.2",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-react": "^7.7.0",
+    "prettier": "^1.11.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "lint": "eslint '**/*.{js,jsx}' --quiet",
+    "format": "prettier --write '**/*.{js,jsx}'"
   },
   "author": "",
   "license": "ISC"
