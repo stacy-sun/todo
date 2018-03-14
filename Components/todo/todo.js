@@ -94,6 +94,7 @@ export default class TodoApp extends React.Component {
       return (
         <li>
           <input
+            className="checkbox"
             type="checkbox"
             checked={item.isDone}
             onClick={() => {

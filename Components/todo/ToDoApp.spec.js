@@ -13,13 +13,23 @@ describe('ToDoApp', () => {
     expect(actualTitle).toEqual('Storybook');
   });
 
-  it('should list the todo items', () => {
-    let items = $$('.items li');
-    expect(list.count()).toBe(3);
+  //   it('should list the todo items', () => {
+  //     let items = $$('.items li');
+  //     expect(list.count()).toBe(3);
+  //   });
+
+  // it('should add new item when click add button', () => {
+
+  // });
+
+  it('should mark them as complete when click the checkbox', () => {
+    let checkbox = $$('.checkbox');
+
+    expect(checkbox.isSelected()).toBe([true, true, false]);
+    checkbox.click();
+    expect(checkbox.isSelected()).toBe([false, false, true]);
   });
 
-  //   it('should add new item when click add button');
-  //   it('should mark them as complete when click the checkbox');
   //   it("should show them all when the filter is 'all'");
   //   it("should show complete items when the filter is 'complete'");
   //   it("should show incomplete items when the filter is 'incomplete'");
