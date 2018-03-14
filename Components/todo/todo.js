@@ -58,10 +58,21 @@ export default class TodoApp extends React.Component {
   };
 
   handleClickTrash = id => {
-    const currentItems = this.state.items;
-    const index = currentItems.indexOf(id);
-    currentItems.splice(index, 1);
-    this.setState({ items: currentItems });
+    // const currentItems = this.state.items;
+    // let itemToDeleteIndex;
+    // this.state.items.forEach((item, currentIndex) => {
+    //   if (item.id === id) {
+    //     itemToDeleteIndex = currentIndex;
+    //   }
+    // });
+
+    // console.log(itemToDeleteIndex);
+    // currentItems.splice(itemToDeleteIndex, 1);
+    // this.setState({ items: currentItems });
+
+    this.setState({
+      items: this.state.items.filter(item => item.id !== id)
+    });
   };
 
   render() {
@@ -115,7 +126,7 @@ export default class TodoApp extends React.Component {
             Add
           </Button>
         </div>
-        <ul>{listItems}</ul>
+        <ul className="items">{listItems}</ul>
         <div className="items-status">
           <span onClick={this.handleAll}>All | </span>
           <span onClick={this.handleIncomplete}>Incomplete | </span>
