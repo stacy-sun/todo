@@ -26,7 +26,7 @@
     "style-loader": "^0.20.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "protractor test/conf.js",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "lint": "eslint '**/*.{js,jsx}' --quiet",
     "format": "prettier --write '**/*.{js,jsx}'"
